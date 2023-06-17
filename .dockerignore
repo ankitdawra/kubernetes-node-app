@@ -1,0 +1,6 @@
+node_modules
+commands.txt
+.gitignore
+db.sql
+.readme
+.git

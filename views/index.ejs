@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Dashboard</title>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+    </head>
+    <body>
+        <div class="user-data">
+            <h3>Dashboard</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Location</th>
+                </tr>
+                <% users.forEach(user => { %>
+                    <tr>
+                        <td><%= user.name %></td>
+                        <td><%= user.age %></td>
+                        <td><%= user.location %></td>
+                    </tr>
+                <% }) %>
+            </table>
+        </div>
+    </body>
+</html>

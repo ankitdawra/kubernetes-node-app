@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font: icon;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.user-data h3 {
+  background: #eee;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+  font-weight: initial;
+}
+
+table {
+  margin: 30px auto;
+  width: 50%;
+  text-align: center;
+}
+
+table tr td,
+table tr th {
+  padding: 10px;
+  border: 1px solid #eaeaea;
+}
+
+table tr:nth-child(even) {
+  background: #eee;
+}
