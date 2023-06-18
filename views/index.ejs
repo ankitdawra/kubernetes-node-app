@@ -9,20 +9,35 @@
     <body>
         <div class="user-data">
             <h3>Dashboard</h3>
-            <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Location</th>
-                </tr>
-                <% users.forEach(user => { %>
-                    <tr>
-                        <td><%= user.name %></td>
-                        <td><%= user.age %></td>
-                        <td><%= user.location %></td>
-                    </tr>
-                <% }) %>
-            </table>
+            <div class="main">
+                <% if(error){ %>
+                    <%= error %>
+                    <div>
+                        <a href="https://github.com/ankitdawra/kubernetes-node-app/blob/main/README.md" target="_blank">Check Readme File</a>
+                    </div>
+                <% } else{ %>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Location</th>
+                        </tr>
+                        <% if(users.length){ %>
+                            <% users.forEach(user => { %>
+                                <tr>
+                                    <td><%= user.name %></td>
+                                    <td><%= user.age %></td>
+                                    <td><%= user.location %></td>
+                                </tr>
+                            <% }) %>
+                        <% } else{ %>
+                            <tr>
+                                <td colspan="3">No Records</td>
+                            </tr>
+                        <% } %>
+                    </table>
+                <% } %>
+            </div>
         </div>
     </body>
 </html>

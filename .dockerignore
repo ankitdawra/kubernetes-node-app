@@ -1,6 +1,4 @@
-node_modules
-commands.txt
+node_modules/*
 .gitignore
-db.sql
-.readme
-.git
+*.yaml
+*.sql

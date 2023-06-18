@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font: icon;
-  text-transform: uppercase;
   font-size: 12px;
 }
 
@@ -11,12 +10,18 @@ body {
   margin: 0;
   text-align: center;
   font-weight: initial;
+  text-transform: uppercase;
 }
 
-table {
+.user-data .main {
   margin: 30px auto;
   width: 50%;
   text-align: center;
+}
+
+table {
+  width: 100%;
+  text-transform: uppercase;
 }
 
 table tr td,
